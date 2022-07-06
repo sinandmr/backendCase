@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   node_backend:
-    container_name: dockerEnd
+    container_name: node_api
     image: apiend:0.0.7
     build:
       context: .
