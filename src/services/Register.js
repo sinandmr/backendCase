@@ -1,4 +1,3 @@
-import jwt from 'jsonwebtoken';
 import asyncHandler from '../utils/asyncHandler.js';
 import bcrypt from 'bcrypt';
 import User from '../models/User.js';

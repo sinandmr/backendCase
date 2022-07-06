@@ -1,5 +1,4 @@
 import asyncHandler from '../utils/asyncHandler.js';
-import pool from '../database/db.js';
 import Product from '../models/Product.js';
 
 export default asyncHandler(async (req, res) => {
