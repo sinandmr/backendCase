@@ -99,7 +99,7 @@
 Projeyi klonlayın
 
 ```bash
-  git clone https://github.com/sinandmr/deepcase.git
+  git clone https://github.com/sinandmr/backendCase.git
 ```
 
 Proje dizinine gidin
