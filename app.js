@@ -3,6 +3,10 @@ import express from 'express';
 import morgan from 'morgan';
 import cors from 'cors';
 
+// Route Dosyaları
+import userRoute from './src/routes/userRoute.js';
+import productRoute from './src/routes/productRoute.js';
+
 const app = express();
 app.use(cors());
 
@@ -21,6 +25,9 @@ app.disable('x-powered-by');
 app.disable('etag');
 // Middlewares
 app.use(express.json()); // Request içindeki JSON verisine erişmek için bu middleware'i kullanıyorum.
+
+app.use('/api/', userRoute);
+app.use('/api/', productRoute);
 
 app.all('*', (req, res) => {
   res.status(404).json({
